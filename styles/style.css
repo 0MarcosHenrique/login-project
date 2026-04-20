@@ -16,7 +16,7 @@
 }
 
 body, html {
-    background-color: #5f2c82;
+    background-color: #634c1d;
     height: 100vh;
     width: 100vw;
 }
@@ -41,11 +41,13 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
 
+    transition: width 0.4s, height 0.4s;
+    transition-timing-function: ease;
 }
 
 section#login > div#image {
     display: block;
-    background: #5f2c82 url(../images/backgroud.jpg) no-repeat;
+    background: #634c1d url(../images/backgroud.jpg) no-repeat;
     background-position: left bottom;
     background-size: cover;
     height: 200px;
