@@ -26,16 +26,16 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
-
-
+    
+    
     background-color: white;
     width: 250px;
-    height: 520px;
+    height: 540px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
-
+    
+    transform: translate(-50%, -50%);
     transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
 }
@@ -67,13 +67,39 @@ div#formu > p {
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    /* border: 2px solid #948d76; */
+    border-radius: 8px;
     margin: 20px 0px;
     background-color: #948d76;
 }
 
 div.camp > label {
     display: none;
+}
+
+div.camp > span {
+    color: white;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 39px;
+    padding: 5px;
+}
+
+div.camp > input.data {
+    background-color: #ccb3469c ;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+div.camp > input.data:focus-within {
+    background-color: white;
+    transition: 0.6s;
+    border: none;
 }
 
 input[type=submit] {
